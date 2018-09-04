@@ -1,0 +1,23 @@
+<h3> {{page.name}} </h3>
+
+<a href="{{page.link}}"><img src="/assets/img/githubicon.png" height="30" width="30"></a>
+<img src="{{page.img}}" height="500px">
+
+<br>
+Languages Used:
+{%for tag in page.tags%}
+    {{tag}}
+{%endfor%}
+
+<br><br>
+<hr>
+{{content}}
+
+
+<style>
+    h3 {
+        color: red;
+        text-align: center;
+        font-size: 20px;
+    }
+</style>

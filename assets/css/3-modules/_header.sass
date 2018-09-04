@@ -1,0 +1,67 @@
+header
+  width: 100%
+  max-height: 100vh
+  position: relative
+  background: url('../img/header-bg.png') center right 33%
+    size: cover
+    position: top right
+
+  &:hover
+    transition-timing-function: ease-in-out
+    transition: 2s
+    background: url('../img/header-bg.jpg') center right 33%
+      size: cover
+      position: top right
+
+    .header-paint
+      transition-duration: inherit
+      transition-timing-function: ease-in-out
+      opacity: 0.55
+      //-webkit-filter: sepia(100%)  // this is for safari
+      filter: sepia(100%)
+
+    .header-greeting
+      filter: drop-shadow(3px 3px 3px grey)
+
+  nav
+    //position: fixed
+    text-align: right
+    top: 0
+    width: 100%
+    a
+      color: black
+      font:
+        size: 20px
+        family: "Leelawadee UI"
+        weight: bold
+
+      &:hover
+        color: purple
+
+  img.header-paint
+    position: relative
+    top: -50px
+    height: 100vh
+    width: 68vw
+    background-position: left
+    overflow: hidden
+    @media only screen and (max-width: 1100px)
+      width: 100vw
+
+  img.header-greeting
+    position: relative
+    padding: 100px 50px 100px 50px
+    top: -95vh
+    filter: drop-shadow(3px 3px 3px white) invert(60%)
+
+    @media only screen and (max-width: 1100px)
+      width: 90vw
+      position: absolute
+      top: auto
+      bottom: 0px
+
+
+
+
+
+

@@ -1,0 +1,206 @@
+<div class="about">
+
+    <img src="../assets/img/crystal-abstract.png" class="crystal-abstract"/>
+    <img src="../assets/img/crystal-abstract.png" class="crystal-abstract-2"/>
+
+    <h3>I’m Crystal, how would you like to get to know me?</h3>
+
+    <div class="buttons">
+
+        <button class="button" id="surpriseB">Surprise me</button>
+        <button class="button" id="funfactsB">Fun facts</button>
+        <br>
+        <button class="button" id="shortB">short & sweet</button>
+        <button class="button" id="longB"
+                onclick="window.open('https://drive.google.com/file/d/1zeGvQZmR2okvT_mjc6ljdiv1KkEVVS0H/view?usp=sharing','_blank');">
+            Resume
+        </button>
+
+    </div>
+
+    <div class="aboutD">
+
+        <div id="short">
+            <p>I’m 20 years old. I spent my childhood in GuangDong, China, and made Vancouver, Canada my home since
+                2005. I’m a
+                fluent speaker in English, Mandarin, and Cantonese. Diversity is what makes me unique. I’m a proud
+                fusion of
+                Chinese
+                and Canadian culture, Computer Science and Business education. </p>
+
+            <p> Currently, I am a senior at <a href="https://www.ubc.ca/" target="_blank">University of British
+                Columbia</a>,
+                majoring in <a
+                        href="https://tinyurl.com/y9bpkfp2" target="_blank">combined Computer Science and Business</a>,
+                minoring in Math. My passion lies in the intersection of tech and value creation. I’m a keen learner,
+                holistic
+                thinker, and problem solver. I’m currently looking to add value to and learn from internship
+                opportunities for
+                January 2019 and summer 2019. If you're a recruiter, here is my <a
+                        href="https://drive.google.com/file/d/1zeGvQZmR2okvT_mjc6ljdiv1KkEVVS0H/view?usp=sharing"
+                        target="_blank">resume</a>!</p>
+        </div>
+
+        <div id="surprise">
+
+            <div id="typed-strings">
+                <p>Let's play a game</p>
+                <p>I will tell you <strong>2 truths and 1 lie</strong> about me.</p>
+                <p>You have to guess which is the lie.</p>
+                <p>Ready?^1500</p>
+                <p><a href="#!" onclick="testfunc(true)"> 1. I'm a native <strong>Vancouverite</strong>.^500
+                    Born and raised in the 6 0 4.</a>^1500 <br>
+                    <a href="#!" onclick="testfunc(false)"> 2. I'm participating in the <strong>zero waste challenge</strong>.</a>
+                    ^1500 <br>
+                    <a href="#!" onclick="testfunc(false)"> 3. I'm a <strong>climber</strong>.</a> ^1500 <br> <br> Which is the
+                    lie? (Click on your guess)</p>
+            </div>
+
+            <span id="typed"></span>
+            <span id="surpriseWrong" style="display:none">
+                <p>Try again!</p>
+            </span>
+
+            <div id="surpriseCorrect" style="display: none">
+                <p>You're right!</p>
+                <p>
+                    <br><strong>I'm a <strike>native</strike> Vancouverite. <strike>Born</strike> and raised in the 6 0 4.</strong><br>
+                    If you meet me in real life, you will probably assume that I'm a CBC as I talk like typical Vancouverite. <a
+                        href="https://blog.cst.org/en/blog/living-canadian-dream">It wasn't always this way, though.</a> Moving to a new country was a major culture shock to eight-year-old me, but it's this experience that uniquely defines who I am today. Aside from programming languages, I'm now an enthusiastic verbal language learner who is no longer afraid of stepping in foreign soil. Instead, I have grown to love immersing myself in the various cultures of the world to continuously expand my perspectives. I've learned the best way to do this is to first learn to communicate in their language. I'm fluent in English, Mandarin, Cantonese, Tai Shan dialect. I'm conversational in French and Korean, and picked up a word or two of Vietnamese, Hindi, Thai, and Japanese.
+		            <br><br><strong>I'm participating in the zero waste challenge.</strong><br>
+                    Growing up in BC, it's hard not to appreciate the unbelievable landscape I'm surrounded in, and to think about how to preserve its beauty. On a professional level, I believe technology is the key to solutions that minimize environmental impact while maximizing quality of life for humans. On a personal level, I am working towards minimizing my footprint on a daily basis. From simply consuming less, to carrying a reusable bag every grocery trip, to replacing plastic wrap with my homemade beeswax wrap. Although I cannot say I live a zero waste lifestyle yet, I'm getting closer to this goal day by day.
+		            <br><br><strong>I'm a climber.</strong><br>
+                    Climbing is my lifestyle. It's the ultimate trainer for my body and mind. Climbing taught me to continuously improve my performance under high-pressure, to respect and confide in my abilities, to resolve irrational fear, and to appreciate the beauty and nature of this world. The best views are the ones you've worked for. </p>
+                    <!--<img src="height="100px" style="transform: rotate(-90deg)">-->
+
+                <br><br> <img id="myImg" src="/assets/img/climbcragcat.JPG" alt="Climb with Crag Cat" style="width:100%;max-width:300px;transform: rotate(-90deg)">
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01">
+                  <div id="caption"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="funFacts">
+            <ul>
+                <li>My age: 20</li>
+                <li>My city: Vancouver, Canada (2006-Present) <strike>GuangDong, China (1997-2005)</strike></li>
+                <li>My occupation: Full Time Learner (currently an 4th year undergrad at University of British
+                    Columbia)
+                </li>
+                <li>What I study: Combined major in Business and Computer Science, Minor in Math</li>
+                <li>My fluent oral languages: English, Mandarin, Cantonese</li>
+                <li>My fluent programming languages: Java, JavaScript, C, C++</li>
+                <li>My favorite dessert: Gelato</li>
+                <li>My comfort meal: Pho, Lemongrass Chicken with Spring rolls, or anything Vietnamese really</li>
+                <li>I'm the oldest child in my family. Older sister of 2 younger brothers.</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!--<ul>-->
+<!--{{% for post in site.posts %}}-->
+<!--<li>-->
+<!--<a href="{{post.url}}"></a>-->
+<!--</li>-->
+<!--{{% endfor %}}-->
+<!--</ul>-->
+
+
+<!--<div class="excite">-->
+
+
+<!--<h3>This is what excites me!</h3>-->
+
+<!--<ul>-->
+<!--<li>Sustainability</li>-->
+<!--<li>Interdisciplinary Tech</li>-->
+<!--</ul>-->
+
+<!--</div>-->
+
+
+<script>
+
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 80
+    });
+
+    function testfunc(right) {
+
+        if (right) {
+            $("#surpriseCorrect").show();
+            $("#surpriseWrong").hide();
+            $("#typed").hide();
+        } else{
+            $("#surpriseWrong").show();
+            $("#surpriseCorrect").hide();
+        }
+    }
+
+    function hideAllAbouts() {
+        $("#short").hide();
+        $("#surprise").hide();
+        $("#funFacts").hide();
+        $("#long").hide();
+        $("#typed").show();
+        $("#surpriseCorrect").hide();
+        typed.reset();
+    }
+
+    $(document).ready(() => {
+        hideAllAbouts();
+    });
+
+    $("#surpriseB").click(() => {
+        hideAllAbouts();
+        $("#surprise").fadeIn("fast");
+        // $("#surpriseCorrect").show();
+    });
+
+    $("#shortB").click(() => {
+        hideAllAbouts();
+        $("#short").fadeIn("fast");
+    });
+
+    $("#funfactsB").click(() => {
+        hideAllAbouts();
+        $("#funFacts").fadeIn("fast");
+    });
+
+    $("#longB").click(() => {
+        hideAllAbouts();
+        // $("#short").fadeIn("fast");
+    });
+
+
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        modalImg.style.transform = "rotate(-90deg)";
+    };
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+</script>

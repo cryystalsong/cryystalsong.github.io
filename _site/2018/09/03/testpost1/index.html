@@ -1,0 +1,52 @@
+<h3> Athlete Management App </h3>
+
+<a href="https://github.com/cryystalsong/swimApp"><img src="/assets/img/githubicon.png" height="30" width="30"></a>
+<img src="/assets/img/swimAppHome.png" height="500px">
+
+<br>
+Languages Used:
+
+    javascript
+
+    php
+
+
+<br><br>
+<hr>
+<p><img src="/assets/img/swimAppHome.png" alt="test" title="hover text" /></p>
+
+<p>We wanted to create a database app for the management of athletes and their related activities, in our case, we specified the domain to be for swimmers. However, this project could easily be modified for other domains of athletes as well. This was my first full database project, where I went through the entire process of modelling our domain through ER diagrams, implementing the schema normalized to be in BCNF, and finally translating everything into SQL format readable for Oracle, the RDBMS we decided to host our database instance on. We used php to connect to our database instance on Oracle.</p>
+
+<p>Although I was introduced to working with queries in my previous project (link), this was my first time writing such a large variety of queries and working directly with a RDBMS. The queries we wrote ranged from selection, projection, join, division, aggregation (min, max, average, and count), nested aggregation, group-bys, delete (with and without cascades), and update.</p>
+
+<p>To improve the UI, we also added extra features such as type checking to ensure compliance with our queries. Type-checking was done in the front end so that we wouldn’t go through the case of submitting an incorrect query, and then debugging to see what the issue was.</p>
+
+<p>This project introduced me to many new learnings:</p>
+<ul>
+  <li>working with Ionic framework, introduced to hybrid mobile app development</li>
+  <li>implementing a selection of different queries</li>
+  <li>Working with a RDBMS (Oracle)</li>
+  <li>Connecting to a RDBMS with php *** this was actually a big challenge for me initially to understand how all these pieces fit together</li>
+  <li>Retrieving data from RDBMS and displaying it</li>
+</ul>
+
+<p>One of the challenges I had with this project was understanding how all the pieces fit together. Prior to this project, I’ve heard of many technical terms and languages being thrown around such as <code class="highlighter-rouge">database, SQL, php, endpoints, API</code> but struggled to understand their individual functionalities and furthermore, how they all worked together in passing information to one another.</p>
+
+<p>I ended up reaching out to a friend of mine who is experienced in web development, and we sketched out a mini process of how everything fit together. Although this is pretty rough and messy, I’ve posted it below in case it provides any value for anyone who may also be struggling with the high level understanding for your first full database project.</p>
+
+<p>This was probably the biggest takeaway from this project for me: being able to understand how each individual components works and the full process of connecting them together!</p>
+
+<p>Note: As our connection to Oracle has expired, our project no longer runs. However, you can still view our source code on Github here.</p>
+
+<p>php: server-side scripting language (connects to the database through credentials)SQL: database management language (models out the domain by generating database structure/schema, and populates data)
+database (oracle): hosts our database instance which we modelled out with SQL  and stores the data</p>
+
+
+
+<style>
+    h3 {
+        color: red;
+        text-align: center;
+        font-size: 20px;
+    }
+</style>
