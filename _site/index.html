@@ -4,13 +4,15 @@
     <title></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+    <!--<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">-->
     <link rel="stylesheet" href="/assets/css/main.css"/>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
+    <script src="/assets/js/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/functions.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -51,7 +53,7 @@
         <br>
         <button class="button" id="shortB">short & sweet</button>
         <button class="button" id="longB"
-                onclick="window.open('https://drive.google.com/file/d/1zeGvQZmR2okvT_mjc6ljdiv1KkEVVS0H/view?usp=sharing','_blank');">
+                onclick="window.open(resume,'_blank');">
             Resume
         </button>
 
@@ -76,8 +78,7 @@
                 thinker, and problem solver. I’m currently looking to add value to and learn from internship
                 opportunities for
                 January 2019 and summer 2019. If you're a recruiter, here is my <a
-                        href="https://drive.google.com/file/d/1zeGvQZmR2okvT_mjc6ljdiv1KkEVVS0H/view?usp=sharing"
-                        target="_blank">resume</a>!</p>
+                        href="#!" onclick="window.open(resume,'_blank');">resume</a>!</p>
         </div>
 
         <div id="surprise">
@@ -168,6 +169,8 @@
 
 <script>
 
+    var resume = "https://drive.google.com/file/d/1X57VxfzHMaH1xJBINa6qQqnESN8l2d2Q/view?usp=sharing";
+
     var typed = new Typed('#typed', {
         stringsElement: '#typed-strings',
         typeSpeed: 80
@@ -193,6 +196,9 @@
         $("#typed").show();
         $("#surpriseCorrect").hide();
         typed.reset();
+        $("html,body").animate({
+                scrollTop: $("div.aboutD").offset().top},
+            500);
     }
 
     $(document).ready(() => {
@@ -202,7 +208,6 @@
     $("#surpriseB").click(() => {
         hideAllAbouts();
         $("#surprise").fadeIn("fast");
-        // $("#surpriseCorrect").show();
     });
 
     $("#shortB").click(() => {
@@ -244,9 +249,6 @@
     }
 </script>
 
-
-<script src="/assets/js/jquery-2.1.1.min.js"></script>
-<script src="/assets/js/functions.js" type="text/javascript"></script>
 
 <script>
     $(document).ready(()=>{

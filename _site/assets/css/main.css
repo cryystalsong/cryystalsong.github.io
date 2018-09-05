@@ -235,7 +235,7 @@ header {
     background-position: top right; }
   header:hover {
     transition-timing-function: ease-in-out;
-    transition: 2s;
+    transition: 1s;
     background: url("../img/header-bg.jpg") center right 33%;
       background-size: cover;
       background-position: top right; }
