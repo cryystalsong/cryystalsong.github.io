@@ -155,9 +155,6 @@
         $("#typed").show();
         $("#surpriseCorrect").hide();
         typed.reset();
-        $("html,body").animate({
-                scrollTop: $("div.aboutD").offset().top},
-            500);
     }
 
     $(document).ready(() => {
@@ -167,16 +164,25 @@
     $("#surpriseB").click(() => {
         hideAllAbouts();
         $("#surprise").fadeIn("fast");
+        $("html,body").animate({
+                scrollTop: $("div.aboutD").offset().top},
+            500);
     });
 
     $("#shortB").click(() => {
         hideAllAbouts();
         $("#short").fadeIn("fast");
+        $("html,body").animate({
+                scrollTop: $("div.aboutD").offset().top},
+            500);
     });
 
     $("#funfactsB").click(() => {
         hideAllAbouts();
         $("#funFacts").fadeIn("fast");
+        $("html,body").animate({
+                scrollTop: $("div.aboutD").offset().top},
+            500);
     });
 
     $("#longB").click(() => {
